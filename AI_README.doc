@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Omekum App AI Readable Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.45;
+      color: #111111;
+    }
+    h1, h2, h3 {
+      color: #111111;
+    }
+    code, pre {
+      font-family: Consolas, monospace;
+      background: #f4f4f4;
+    }
+    pre {
+      padding: 12px;
+      white-space: pre-wrap;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <h1>Omekum App AI Readable Document</h1>
+
+  <h2>Purpose</h2>
+  <p>
+    This document explains the Omekum web app in a structure that is easy for humans,
+    Word processors, and AI tools to read. The project is a React and Vite website for
+    a digital agency called Omekum.
+  </p>
+
+  <h2>Project Summary</h2>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Project name</td>
+      <td>omekum</td>
+    </tr>
+    <tr>
+      <td>Framework</td>
+      <td>React 18 with Vite</td>
+    </tr>
+    <tr>
+      <td>Main app file</td>
+      <td>src/App.jsx</td>
+    </tr>
+    <tr>
+      <td>Entry file</td>
+      <td>src/main.jsx</td>
+    </tr>
+    <tr>
+      <td>Build output</td>
+      <td>dist/</td>
+    </tr>
+    <tr>
+      <td>Local dev URL</td>
+      <td>http://127.0.0.1:5173/</td>
+    </tr>
+    <tr>
+      <td>Contact page URL</td>
+      <td>http://127.0.0.1:5173/contact</td>
+    </tr>
+  </table>
+
+  <h2>How To Run</h2>
+  <p>Install dependencies if needed:</p>
+  <pre>npm install</pre>
+
+  <p>Start the development server:</p>
+  <pre>npm run dev -- --host 127.0.0.1</pre>
+
+  <p>Open this URL in a browser:</p>
+  <pre>http://127.0.0.1:5173/</pre>
+
+  <p>Build for production:</p>
+  <pre>npm run build</pre>
+
+  <p>Preview the production build:</p>
+  <pre>npm run preview</pre>
+
+  <h2>App Content</h2>
+  <p>
+    The app presents Omekum as a practical digital agency that builds websites,
+    apps, AI tools, automation systems, dashboards, and custom software.
+  </p>
+
+  <h3>Main Sections</h3>
+  <ul>
+    <li>Header navigation: Work, Services, AI Solutions, About, Contact.</li>
+    <li>Hero section: Digital products for real-world problems.</li>
+    <li>Project numbers section: completed projects, running projects, and AI/automation flows.</li>
+    <li>Services section: Digital Products, AI Solutions, Custom Software, Tech Problem Solving.</li>
+    <li>About section: Clear communication, practical pricing, fast prototypes, custom solutions, long-term support.</li>
+    <li>AI section: Customer support assistants, document automation, lead qualification, dashboards, knowledge chatbots, workflow automation.</li>
+    <li>Process section: Understand, design, build, test, launch and improve.</li>
+    <li>Work examples: Local Service Booking, AI Support Desk, Operations Dashboard.</li>
+    <li>Testimonials section: sample client quotes that should be replaced with real testimonials when available.</li>
+    <li>Contact section: Email links to hello@omekum.com.</li>
+    <li>Dedicated contact page: Hero section, project inquiry form, direct email option, contact reasons, and next-step trust cues.</li>
+    <li>Footer: Services, company links, and email.</li>
+  </ul>
+
+  <h3>Landing Page Project Numbers</h3>
+  <ul>
+    <li>28+ completed projects.</li>
+    <li>06 running projects.</li>
+    <li>14 AI and automation flows.</li>
+    <li>These are placeholder marketing numbers and should be updated with real Omekum numbers when confirmed.</li>
+  </ul>
+
+  <h3>Landing Page Testimonials</h3>
+  <ul>
+    <li>Testimonial 1: Rohan Mehta, Founder, Local Services Platform.</li>
+    <li>Testimonial 2: Anika Sharma, Operations Lead, Support Team.</li>
+    <li>Testimonial 3: Vikram Rao, Director, Growing Retail Business.</li>
+    <li>These are sample testimonials and should be replaced with real client quotes before public launch if required.</li>
+  </ul>
+
+  <h3>Contact Page Details</h3>
+  <ul>
+    <li>Route: /contact</li>
+    <li>Main goal: Encourage users to start a project conversation with Omekum.</li>
+    <li>Form fields: name, email, project type, and project details.</li>
+    <li>Direct email: hello@omekum.com</li>
+    <li>Trust cues: reply within 1 business day, clear next steps, no pressure call, practical budget guidance.</li>
+    <li>Contact reasons: build something new, add AI or automation, fix a tech problem.</li>
+    <li>Form behavior: opens the user's email app using mailto because no backend is currently connected.</li>
+  </ul>
+
+  <h2>Animation And Motion Scope</h2>
+  <p>
+    The app includes lightweight CSS animation in areas where motion supports the
+    agency story without requiring JavaScript animation libraries.
+  </p>
+  <ul>
+    <li>Hero image uses slow background drift for visual depth.</li>
+    <li>Hero content fades and rises on page load.</li>
+    <li>Header slides in and the Omekum brand mark has a soft pulse.</li>
+    <li>Hero signal strip contains moving labels: Prototype, Automate, Launch, Improve.</li>
+    <li>Service cards enter with staggered timing and include a moving scan accent.</li>
+    <li>Service accent bars animate through the brand colors.</li>
+    <li>Value chips and AI solution chips enter with small staggered motion.</li>
+    <li>AI board includes a scanning line to suggest automation and analysis.</li>
+    <li>Process track includes a moving progress rule above the steps.</li>
+    <li>Cards and images have hover movement for interactivity.</li>
+    <li>The CSS includes prefers-reduced-motion support for accessibility.</li>
+  </ul>
+
+  <h2>File Map</h2>
+  <table>
+    <tr>
+      <th>Path</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>package.json</td>
+      <td>Defines scripts and dependencies for the React/Vite app.</td>
+    </tr>
+    <tr>
+      <td>vite.config.js</td>
+      <td>Configures Vite with the React plugin.</td>
+    </tr>
+    <tr>
+      <td>index.html</td>
+      <td>HTML shell used by Vite.</td>
+    </tr>
+    <tr>
+      <td>src/main.jsx</td>
+      <td>React entry point. Mounts the App component into the root element.</td>
+    </tr>
+    <tr>
+      <td>src/App.jsx</td>
+      <td>Main React component. Contains all page sections and text content.</td>
+    </tr>
+    <tr>
+      <td>src/App.css</td>
+      <td>Main page styling for the Omekum website.</td>
+    </tr>
+    <tr>
+      <td>src/index.css</td>
+      <td>Global CSS imported by the React entry point.</td>
+    </tr>
+    <tr>
+      <td>public/</td>
+      <td>Static public assets.</td>
+    </tr>
+    <tr>
+      <td>dist/</td>
+      <td>Production build output generated by Vite.</td>
+    </tr>
+  </table>
+
+  <h2>Dependencies</h2>
+  <ul>
+    <li>react</li>
+    <li>react-dom</li>
+    <li>vite</li>
+    <li>@vitejs/plugin-react</li>
+    <li>eslint and React ESLint plugins</li>
+  </ul>
+
+  <h2>AI Context Block</h2>
+  <p>
+    The following block is intentionally plain and structured for AI ingestion.
+  </p>
+  <pre>{
+  "project": "omekum",
+  "type": "React Vite website",
+  "purpose": "Digital agency website for Omekum",
+  "primary_audience": [
+    "founders",
+    "shop owners",
+    "creators",
+    "service businesses",
+    "teams",
+    "individuals needing technical help"
+  ],
+  "main_capabilities_advertised": [
+    "websites",
+    "apps",
+    "AI tools",
+    "automation",
+    "dashboards",
+    "custom software"
+  ],
+  "run_command": "npm run dev -- --host 127.0.0.1",
+  "local_url": "http://127.0.0.1:5173/",
+  "contact_page_url": "http://127.0.0.1:5173/contact",
+  "build_command": "npm run build",
+  "main_source_file": "src/App.jsx",
+  "entry_file": "src/main.jsx",
+  "styling_files": [
+    "src/App.css",
+    "src/index.css"
+  ],
+  "animation_files": [
+    "src/App.jsx",
+    "src/App.css"
+  ],
+  "animation_summary": [
+    "hero image drift",
+    "hero signal strip",
+    "staggered card and chip entry",
+    "AI scan line",
+    "process progress flow",
+    "hover movement",
+    "reduced motion support"
+  ],
+  "landing_stats": {
+    "completed_projects": "28+",
+    "running_projects": "06",
+    "ai_and_automation_flows": "14",
+    "status": "Placeholder marketing numbers until real counts are confirmed"
+  },
+  "landing_testimonials": {
+    "status": "Sample testimonials until real client quotes are confirmed",
+    "items": [
+      "Rohan Mehta, Founder, Local Services Platform",
+      "Anika Sharma, Operations Lead, Support Team",
+      "Vikram Rao, Director, Growing Retail Business"
+    ]
+  },
+  "contact_page": {
+    "route": "/contact",
+    "purpose": "Dedicated project inquiry and contact page",
+    "form_fields": [
+      "name",
+      "email",
+      "project_type",
+      "message"
+    ],
+    "direct_email": "hello@omekum.com",
+    "trust_cues": [
+      "Reply within 1 business day",
+      "Clear next steps",
+      "No pressure call",
+      "Practical budget guidance"
+    ],
+    "backend_status": "No backend connected. Form uses mailto."
+  },
+  "contact_email": "hello@omekum.com"
+}</pre>
+
+  <h2>Notes For Future AI Assistants</h2>
+  <ul>
+    <li>Do not edit files inside node_modules.</li>
+    <li>Primary content changes should usually be made in src/App.jsx.</li>
+    <li>Primary visual changes should usually be made in src/App.css or src/index.css.</li>
+    <li>Use npm run build to verify the app still builds after changes.</li>
+    <li>The current app is mostly static content and does not use routing or a backend.</li>
+  </ul>
+</body>
+</html>
