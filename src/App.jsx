@@ -1,283 +1,212 @@
 import './App.css'
 
-const services = [
+const heroSignals = ['AI systems', 'Operator tools', 'Workflow engines', 'Decision layers']
+
+const proofStats = [
   {
-    title: 'Digital Products',
-    text: 'Websites, apps, portals, booking systems, customer platforms, and internal tools built for real use.',
+    value: '12 days',
+    label: 'Average first live prototype',
+    text: 'Fast enough to create momentum, structured enough to survive real use.',
   },
   {
-    title: 'AI Solutions',
-    text: 'Chatbots, document tools, business assistants, automation flows, and AI features that save daily effort.',
+    value: '03 layers',
+    label: 'Product, AI, and operations thinking',
+    text: 'We design the interface, the intelligence, and the workflow around it together.',
   },
   {
-    title: 'Custom Software',
-    text: 'Software shaped around your exact workflow instead of forcing your team into generic tools.',
-  },
-  {
-    title: 'Tech Problem Solving',
-    text: 'Fix, improve, automate, rebuild, or launch the technology that your work depends on.',
+    value: '100%',
+    label: 'Custom delivery',
+    text: 'No template stack, no generic automation theatre, no fake complexity.',
   },
 ]
 
-const values = [
-  'Clear communication',
-  'Practical pricing',
-  'Fast prototypes',
-  'Custom solutions',
-  'Long-term support',
+const capabilities = [
+  {
+    title: 'AI Product Design',
+    text: 'We shape user journeys where AI is useful, legible, and worth trusting.',
+  },
+  {
+    title: 'Internal Operating Tools',
+    text: 'Dashboards, copilots, review layers, and automation systems built around how teams actually work.',
+  },
+  {
+    title: 'Workflow Intelligence',
+    text: 'Document parsing, lead routing, support resolution, and decision support designed for repeatability.',
+  },
+  {
+    title: 'Launch-Ready Experiences',
+    text: 'Premium sites, client portals, and product surfaces that signal quality before a pitch even starts.',
+  },
 ]
 
-const aiUses = [
-  'Customer support assistant',
-  'Invoice and document automation',
-  'Lead qualification system',
-  'Business data dashboard',
-  'Internal knowledge chatbot',
-  'Workflow automation',
+const principles = [
+  'Opinionated product thinking',
+  'Interfaces that explain the system',
+  'Automation without losing human control',
+  'Sharper brand presence at every touchpoint',
 ]
 
-const motionSignals = [
-  'Prototype',
-  'Automate',
-  'Launch',
-  'Improve',
+const featuredWork = [
+  {
+    name: 'Revenue Triage Console',
+    type: 'Lead qualification and routing',
+    summary: 'An AI-assisted intake system that scores inbound demand, highlights urgency, and pushes the right next step to operators.',
+  },
+  {
+    name: 'Knowledge Operator',
+    type: 'Internal assistant for service teams',
+    summary: 'A grounded assistant that answers process questions from verified company material instead of hallucinating through meetings.',
+  },
+  {
+    name: 'Document Action Engine',
+    type: 'Intake, extraction, and review',
+    summary: 'A review-first pipeline for invoices, onboarding files, and operational paperwork where teams need speed and traceability.',
+  },
+]
+
+const buildSteps = [
+  'Frame the business tension',
+  'Map the operator and user flow',
+  'Prototype the system shape quickly',
+  'Build the production-grade version',
+]
+
+const signals = [
+  {
+    title: 'Looks premium because the system is clear',
+    text: 'Strong UX is not just polish. It signals maturity, confidence, and control.',
+  },
+  {
+    title: 'AI is visible where it helps and silent where it should be',
+    text: 'We avoid the common mistake of turning every screen into a chatbot demo.',
+  },
+  {
+    title: 'Motion is used to guide attention, not perform intelligence',
+    text: 'The site should feel alive, but never fake or overloaded.',
+  },
 ]
 
 const contactReasons = [
-  {
-    title: 'Build something new',
-    text: 'Websites, apps, dashboards, portals, booking systems, and business tools.',
-  },
-  {
-    title: 'Add AI or automation',
-    text: 'Chatbots, document workflows, internal assistants, and repeated task automation.',
-  },
-  {
-    title: 'Fix a tech problem',
-    text: 'Slow systems, broken workflows, confusing tools, or ideas that need a practical path.',
-  },
-]
-
-const contactSignals = [
-  'Reply within 1 business day',
-  'Clear next steps',
-  'No pressure call',
-  'Practical budget guidance',
-]
-
-const projectStats = [
-  {
-    value: '28+',
-    label: 'Completed projects',
-    text: 'Websites, tools, dashboards, and automation systems delivered for real business needs.',
-  },
-  {
-    value: '06',
-    label: 'Running projects',
-    text: 'Active builds across AI workflows, service platforms, and custom internal software.',
-  },
-  {
-    value: '14',
-    label: 'AI and automation flows',
-    text: 'Repeated tasks converted into faster, cleaner, and easier daily systems.',
-  },
-]
-
-const processSteps = [
-  'Understand the problem',
-  'Design the solution',
-  'Build the product',
-  'Test with real users',
-  'Launch and improve',
-]
-
-const examples = [
-  {
-    title: 'Local Service Booking',
-    problem: 'Customers were calling for every appointment.',
-    solution: 'A mobile-friendly booking flow with payment and reminders.',
-  },
-  {
-    title: 'AI Support Desk',
-    problem: 'Repeated questions were taking hours each week.',
-    solution: 'An assistant trained on business information and service rules.',
-  },
-  {
-    title: 'Operations Dashboard',
-    problem: 'Daily work was spread across sheets, calls, and messages.',
-    solution: 'A custom dashboard for tasks, inventory, leads, and reports.',
-  },
-]
-
-const testimonials = [
-  {
-    quote: 'Omekum turned a messy idea into a working product plan and then built it without making the process complicated.',
-    name: 'Rohan Mehta',
-    role: 'Founder, Local Services Platform',
-  },
-  {
-    quote: 'The AI assistant saved our team hours every week. The best part was how clearly everything was explained before launch.',
-    name: 'Anika Sharma',
-    role: 'Operations Lead, Support Team',
-  },
-  {
-    quote: 'We needed practical software, not a long agency process. Omekum gave us a clean dashboard that our team actually uses.',
-    name: 'Vikram Rao',
-    role: 'Director, Growing Retail Business',
-  },
+  'A startup product that needs a stronger first impression',
+  'An internal team buried under repeated manual work',
+  'A service business ready to operationalize with AI',
 ]
 
 function ContactPage() {
   return (
     <main className="site-shell contact-page">
       <header className="topbar">
-        <a className="brand" href="/" aria-label="Omekum home">
+        <a className="brand" href="/" aria-label="orilto.ai home">
           <span className="brand-mark">O</span>
-          Omekum
+          <span>orilto.ai</span>
         </a>
         <nav className="nav-links" aria-label="Primary navigation">
+          <a href="/#capabilities">Capabilities</a>
           <a href="/#work">Work</a>
-          <a href="/#services">Services</a>
-          <a href="/#ai">AI Solutions</a>
-          <a href="/#about">About</a>
+          <a href="/#process">Process</a>
           <a href="/contact">Contact</a>
         </nav>
-        <a className="nav-cta" href="mailto:hello@omekum.com">Email Us</a>
+        <a className="nav-cta" href="mailto:hello@orilto.ai">Email</a>
       </header>
 
       <section className="contact-hero">
-        <img
-          className="contact-hero-image"
-          src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85"
-          alt="Team discussing a digital project plan"
-        />
-        <div className="contact-hero-overlay" />
-        <div className="contact-hero-content">
-          <p className="eyebrow">Contact Omekum</p>
-          <h1>Tell us the problem. We will help shape the solution.</h1>
-          <p>
-            Start with a rough idea, a stuck workflow, or a product you want to launch.
-            We will respond with clear next steps, practical options, and a path that fits your stage.
-          </p>
-        </div>
-        <div className="contact-status" aria-label="Contact response promise">
-          <span className="status-light" />
-          <strong>Open for new projects</strong>
-          <span>First reply within 1 business day</span>
+        <div className="contact-backdrop" />
+        <div className="contact-grid">
+          <div className="contact-hero-copy">
+            <p className="eyebrow">Start a conversation</p>
+            <h1>Bring the messy version. We are used to shaping it.</h1>
+            <p>
+              If you are building an AI product, modernizing an operation, or trying to turn
+              a half-clear idea into a credible system, this is the right place to start.
+            </p>
+            <div className="contact-mini-list">
+              {contactReasons.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <aside className="contact-card">
+            <p className="eyebrow">Direct contact</p>
+            <h2>hello@orilto.ai</h2>
+            <p>Share the problem, the goal, the constraint, or the current setup. A rough brief is enough.</p>
+            <div className="status-row">
+              <span className="status-dot" />
+              <span>Reply within 1 business day</span>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section className="contact-main" aria-label="Contact form and project details">
+      <section className="contact-main">
         <div className="contact-copy">
-          <p className="eyebrow">Start here</p>
-          <h2>A useful first message gets you a useful first answer.</h2>
+          <p className="eyebrow">What to send</p>
+          <h2>The best first message is honest, specific, and incomplete.</h2>
           <p>
-            Share what you want to build, improve, automate, or fix. You do not need a perfect brief.
-            A few honest details are enough to begin.
+            You do not need a polished requirements document. We only need enough truth to
+            understand what is stuck, what matters, and what success should look like.
           </p>
-
-          <div className="contact-reasons">
-            {contactReasons.map((reason, index) => (
-              <article className="contact-reason" key={reason.title} style={{ '--delay': `${index * 90}ms` }}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <h3>{reason.title}</h3>
-                <p>{reason.text}</p>
-              </article>
-            ))}
-          </div>
-
-          <div className="contact-direct">
-            <h3>Prefer a direct note?</h3>
-            <a href="mailto:hello@omekum.com">hello@omekum.com</a>
-            <p>Use this for project ideas, support questions, partnerships, or follow-ups.</p>
+          <div className="contact-points">
+            <article>
+              <strong>01</strong>
+              <h3>What is breaking down right now?</h3>
+              <p>Manual work, slow teams, weak product perception, poor onboarding, unreliable handoffs.</p>
+            </article>
+            <article>
+              <strong>02</strong>
+              <h3>What are you trying to build?</h3>
+              <p>An AI-first startup site, an internal tool, a workflow system, or a customer-facing product layer.</p>
+            </article>
+            <article>
+              <strong>03</strong>
+              <h3>What matters most?</h3>
+              <p>Speed, conversion, trust, operational clarity, launch date, or better team leverage.</p>
+            </article>
           </div>
         </div>
 
-        <form className="contact-form" action="mailto:hello@omekum.com" method="post" encType="text/plain">
+        <form className="contact-form" action="mailto:hello@orilto.ai" method="post" encType="text/plain">
           <div className="form-header">
             <p className="eyebrow">Project inquiry</p>
-            <h2>Let us know what you need.</h2>
+            <h2>Tell us what you are building.</h2>
           </div>
 
           <label>
-            <span>Your name</span>
+            <span>Name</span>
             <input name="name" type="text" autoComplete="name" placeholder="Your name" required />
           </label>
 
           <label>
-            <span>Email address</span>
-            <input name="email" type="email" autoComplete="email" placeholder="you@example.com" required />
+            <span>Email</span>
+            <input name="email" type="email" autoComplete="email" placeholder="you@company.com" required />
           </label>
 
           <label>
-            <span>What do you need help with?</span>
+            <span>Project type</span>
             <select name="project_type" defaultValue="" required>
               <option value="" disabled>Select one</option>
-              <option>Website or app</option>
-              <option>AI solution</option>
-              <option>Automation</option>
-              <option>Custom software</option>
-              <option>Fix or improve existing tech</option>
+              <option>AI startup website</option>
+              <option>AI product or feature</option>
+              <option>Internal operations tool</option>
+              <option>Automation or workflow system</option>
+              <option>Existing product redesign</option>
             </select>
           </label>
 
           <label>
-            <span>Project details</span>
+            <span>Brief</span>
             <textarea
               name="message"
-              rows="5"
-              placeholder="Tell us what is happening, what you want to change, and any deadline or budget range you already know."
+              rows="6"
+              placeholder="What are you building, what is not working yet, and what should this solve?"
               required
             />
           </label>
 
-          <button className="button primary form-button" type="submit">Send Project Details</button>
-
-          <p className="form-note">
-            Your message opens in your email app so you can review it before sending.
-            We only use your details to respond to your inquiry.
-          </p>
+          <button className="button primary form-button" type="submit">Send inquiry</button>
+          <p className="form-note">Your email app will open so you can review the message before sending.</p>
         </form>
       </section>
-
-      <section className="contact-confidence">
-        <div className="section-heading">
-          <p className="eyebrow">What happens next</p>
-          <h2>No confusing process. Just a clear first step.</h2>
-        </div>
-        <div className="confidence-grid">
-          {contactSignals.map((signal, index) => (
-            <article className="confidence-card" key={signal} style={{ '--delay': `${index * 90}ms` }}>
-              <span>{String(index + 1).padStart(2, '0')}</span>
-              <h3>{signal}</h3>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <footer className="footer">
-        <div>
-          <a className="brand footer-brand" href="/" aria-label="Omekum home">
-            <span className="brand-mark">O</span>
-            Omekum
-          </a>
-          <p>Digital products, AI tools, and custom technology solutions.</p>
-        </div>
-        <div>
-          <h3>Services</h3>
-          <a href="/#services">Digital Products</a>
-          <a href="/#ai">AI Solutions</a>
-          <a href="/#services">Custom Software</a>
-          <a href="/#services">Automation</a>
-        </div>
-        <div>
-          <h3>Company</h3>
-          <a href="/#about">About</a>
-          <a href="/#work">Work</a>
-          <a href="/contact">Contact</a>
-          <a href="mailto:hello@omekum.com">hello@omekum.com</a>
-        </div>
-      </footer>
     </main>
   )
 }
@@ -290,124 +219,172 @@ function App() {
   return (
     <main className="site-shell">
       <header className="topbar">
-        <a className="brand" href="#home" aria-label="Omekum home">
+        <a className="brand" href="#home" aria-label="orilto.ai home">
           <span className="brand-mark">O</span>
-          Omekum
+          <span>orilto.ai</span>
         </a>
         <nav className="nav-links" aria-label="Primary navigation">
+          <a href="#capabilities">Capabilities</a>
           <a href="#work">Work</a>
-          <a href="#services">Services</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#ai">AI Solutions</a>
-          <a href="#about">About</a>
-          <a href="/contact">Contact</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <a className="nav-cta" href="/contact">Start a Project</a>
+        <a className="nav-cta" href="/contact">Start a project</a>
       </header>
 
       <section className="hero" id="home">
-        <img
-          className="hero-image"
-          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85"
-          alt="People working together in a modern digital studio"
-        />
-        <div className="hero-overlay" />
-        <div className="hero-content">
-          <p className="eyebrow">Digital agency for practical technology</p>
-          <h1>Digital products for real-world problems.</h1>
-          <p className="hero-copy">
-            Omekum builds websites, apps, AI tools, and custom technology for people and businesses who need practical solutions that work.
+        <div className="hero-noise" />
+        <div className="hero-orbit hero-orbit-one" />
+        <div className="hero-orbit hero-orbit-two" />
+
+        <div className="hero-copy">
+          <p className="eyebrow">AI systems with product taste</p>
+          <h1>AI experiences built to feel sharp, useful, and unmistakably premium.</h1>
+          <p className="hero-text">
+            orilto.ai designs modern websites, AI workflows, and operator tools for startups and
+            teams that want real leverage, not another generic AI facade.
           </p>
+
           <div className="hero-actions">
-            <a className="button primary" href="/contact">Start a Project</a>
-            <a className="button secondary" href="#services">See What We Build</a>
+            <a className="button primary" href="/contact">Start a project</a>
+            <a className="button secondary" href="#work">See featured work</a>
           </div>
-          <p className="trust-line">AI, automation, websites, apps, dashboards, and custom software.</p>
-        </div>
-        <div className="signal-strip" aria-hidden="true">
-          {motionSignals.map((signal) => (
-            <span key={signal}>{signal}</span>
-          ))}
-        </div>
-      </section>
 
-      <section className="stats-section" aria-label="Omekum project numbers">
-        <div className="stats-intro">
-          <p className="eyebrow">Project momentum</p>
-          <h2>Work delivered, work in motion, and systems improving every week.</h2>
-        </div>
-        <div className="stats-grid">
-          {projectStats.map((stat, index) => (
-            <article className="stat-card" key={stat.label} style={{ '--delay': `${index * 90}ms` }}>
-              <span className="stat-value">{stat.value}</span>
-              <h3>{stat.label}</h3>
-              <p>{stat.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section service-band" id="services">
-        <div className="section-heading">
-          <p className="eyebrow">What we do</p>
-          <h2>We build the technology your work needs.</h2>
-        </div>
-        <div className="service-grid">
-          {services.map((service, index) => (
-            <article className="service-card" key={service.title} style={{ '--delay': `${index * 90}ms` }}>
-              <span className="service-dot" />
-              <h3>{service.title}</h3>
-              <p>{service.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="split-section" id="about">
-        <div className="split-copy">
-          <p className="eyebrow">For everyday builders</p>
-          <h2>Advanced tech should not feel out of reach.</h2>
-          <p>
-            We work with founders, shop owners, creators, service businesses, teams, and individuals who need clear technical help without confusing process or inflated promises.
-          </p>
-          <div className="value-list" aria-label="Omekum values">
-            {values.map((value, index) => (
-              <span key={value} style={{ '--delay': `${index * 80}ms` }}>{value}</span>
+          <div className="hero-signal-row" aria-label="Core service signals">
+            {heroSignals.map((signal) => (
+              <span key={signal}>{signal}</span>
             ))}
           </div>
         </div>
-        <div className="image-panel">
-          <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=85"
-            alt="Small team planning a digital product together"
-          />
+
+        <div className="hero-panel">
+          <div className="panel-frame">
+            <div className="panel-header">
+              <span>Live system view</span>
+              <span>orilto.ai</span>
+            </div>
+            <div className="panel-body">
+              <div className="panel-column">
+                <div className="metric-card accent-coral">
+                  <strong>Faster decisions</strong>
+                  <span>Reduce manual triage with clear AI-assisted workflows.</span>
+                </div>
+                <div className="metric-card accent-gold">
+                  <strong>Higher trust</strong>
+                  <span>Interfaces that explain what the system is doing and why.</span>
+                </div>
+              </div>
+              <div className="panel-timeline">
+                <div className="timeline-node">
+                  <span>01</span>
+                  <p>Signal enters the system</p>
+                </div>
+                <div className="timeline-node">
+                  <span>02</span>
+                  <p>AI organizes, extracts, or recommends</p>
+                </div>
+                <div className="timeline-node">
+                  <span>03</span>
+                  <p>Human operators act with context</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="ai-section" id="ai">
-        <div className="ai-copy">
-          <p className="eyebrow">AI without the buzzwords</p>
-          <h2>AI that saves time, reduces manual work, and improves decisions.</h2>
+      <section className="proof-band">
+        {proofStats.map((item, index) => (
+          <article className="proof-card" key={item.label} style={{ '--delay': `${index * 90}ms` }}>
+            <span>{item.value}</span>
+            <h2>{item.label}</h2>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </section>
+
+      <section className="editorial-section" id="capabilities">
+        <div className="editorial-intro">
+          <p className="eyebrow">What we build</p>
+          <h2>A sharper standard for AI startups and ambitious teams.</h2>
           <p>
-            We use AI where it makes sense: automating repeated tasks, answering customer questions, searching documents, generating reports, and connecting business data.
+            The job is not just to add AI. The job is to design an experience, a system, and a
+            perception of quality that can survive investor demos, client scrutiny, and daily use.
           </p>
         </div>
-        <div className="ai-board" aria-label="AI solution examples">
-          {aiUses.map((item, index) => (
-            <span key={item} style={{ '--delay': `${index * 70}ms` }}>{item}</span>
+
+        <div className="capability-grid">
+          {capabilities.map((item, index) => (
+            <article className="capability-card" key={item.title} style={{ '--delay': `${index * 100}ms` }}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
           ))}
         </div>
       </section>
 
-      <section className="process-section">
-        <div className="section-heading">
-          <p className="eyebrow">How we work</p>
-          <h2>Simple process. Serious execution.</h2>
-          <p>You bring the problem. We shape the product, build the system, and stay close until it works in the real world.</p>
+      <section className="split-feature">
+        <div className="feature-note">
+          <p className="eyebrow">Why the work feels different</p>
+          <h2>We do not treat design as garnish on top of AI infrastructure.</h2>
+          <p>
+            The interface is where confidence is earned. If the product looks confused, the system
+            feels untrustworthy, even when the backend is strong. We design both together.
+          </p>
+          <div className="principle-list">
+            {principles.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
+          </div>
         </div>
+
+        <div className="feature-visual" aria-hidden="true">
+          <div className="visual-stack">
+            <div className="visual-card visual-card-main">
+              <small>Operator console</small>
+              <strong>Human review stays in the loop</strong>
+            </div>
+            <div className="visual-card visual-card-side">
+              <small>System layer</small>
+              <strong>Signals, prompts, confidence, actions</strong>
+            </div>
+            <div className="visual-grid">
+              <span>Inputs</span>
+              <span>Context</span>
+              <span>Routing</span>
+              <span>Review</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="work-section" id="work">
+        <div className="section-heading">
+          <p className="eyebrow">Selected directions</p>
+          <h2>The kind of systems we are built to shape.</h2>
+        </div>
+
+        <div className="work-grid">
+          {featuredWork.map((item, index) => (
+            <article className="work-card" key={item.name} style={{ '--delay': `${index * 100}ms` }}>
+              <p className="work-type">{item.type}</p>
+              <h3>{item.name}</h3>
+              <p>{item.summary}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="process-section" id="process">
+        <div className="section-heading">
+          <p className="eyebrow">How we move</p>
+          <h2>Fast enough for momentum. Serious enough for launch.</h2>
+        </div>
+
         <div className="process-track">
-          {processSteps.map((step, index) => (
-            <article className="process-step" key={step} style={{ '--delay': `${index * 90}ms` }}>
+          {buildSteps.map((step, index) => (
+            <article className="process-step" key={step} style={{ '--delay': `${index * 100}ms` }}>
               <span>{String(index + 1).padStart(2, '0')}</span>
               <h3>{step}</h3>
             </article>
@@ -415,84 +392,52 @@ function App() {
         </div>
       </section>
 
-      <section className="work-section" id="work">
+      <section className="signal-section">
         <div className="section-heading">
-          <p className="eyebrow">Solution examples</p>
-          <h2>Built around real needs.</h2>
+          <p className="eyebrow">Experience standard</p>
+          <h2>Every layer should communicate control.</h2>
         </div>
-        <div className="work-layout">
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
-            alt="Laptop showing a digital dashboard"
-          />
-          <div className="work-list">
-            {examples.map((example, index) => (
-              <article className="work-item" key={example.title} style={{ '--delay': `${index * 90}ms` }}>
-                <h3>{example.title}</h3>
-                <p><strong>Problem:</strong> {example.problem}</p>
-                <p><strong>Solution:</strong> {example.solution}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="testimonial-section" id="testimonials">
-        <div className="section-heading">
-          <p className="eyebrow">Client words</p>
-          <h2>People come to us when technology needs to become simpler.</h2>
-          <p>
-            These sample testimonials show the kind of trust we want every Omekum project to earn.
-            Replace them with real client quotes as projects go live.
-          </p>
-        </div>
-        <div className="testimonial-grid">
-          {testimonials.map((testimonial, index) => (
-            <article className="testimonial-card" key={testimonial.name} style={{ '--delay': `${index * 90}ms` }}>
-              <span className="quote-mark">"</span>
-              <p>{testimonial.quote}</p>
-              <div>
-                <strong>{testimonial.name}</strong>
-                <span>{testimonial.role}</span>
-              </div>
+        <div className="signal-grid">
+          {signals.map((item, index) => (
+            <article className="signal-card" key={item.title} style={{ '--delay': `${index * 100}ms` }}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
             </article>
           ))}
         </div>
       </section>
 
       <section className="cta-section" id="contact">
-        <p className="eyebrow">Start with the problem</p>
-        <h2>Have a tech problem? Let's solve it.</h2>
+        <p className="eyebrow">Built for teams with taste</p>
+        <h2>If you want the work to feel generic, we are not the right fit.</h2>
         <p>
-          Tell us what you are trying to build, fix, automate, or improve. We will help you find the right solution.
+          If you want a site or AI product surface that makes the company feel sharper, more
+          credible, and more advanced, let us build it properly.
         </p>
         <div className="hero-actions">
-          <a className="button primary" href="/contact">Start a Project</a>
-          <a className="button secondary dark" href="/contact">Talk to Omekum</a>
+          <a className="button primary" href="/contact">Start a project</a>
+          <a className="button secondary dark" href="mailto:hello@orilto.ai">hello@orilto.ai</a>
         </div>
       </section>
 
       <footer className="footer">
         <div>
-          <a className="brand footer-brand" href="#home" aria-label="Omekum home">
+          <a className="brand footer-brand" href="#home" aria-label="orilto.ai home">
             <span className="brand-mark">O</span>
-            Omekum
+            <span>orilto.ai</span>
           </a>
-          <p>Digital products, AI tools, and custom technology solutions.</p>
+          <p>AI product design, workflow systems, operator tools, and modern brand surfaces.</p>
         </div>
         <div>
-          <h3>Services</h3>
-          <a href="#services">Digital Products</a>
-          <a href="#ai">AI Solutions</a>
-          <a href="#services">Custom Software</a>
-          <a href="#services">Automation</a>
-        </div>
-        <div>
-          <h3>Company</h3>
-          <a href="#about">About</a>
+          <h3>Explore</h3>
+          <a href="#capabilities">Capabilities</a>
           <a href="#work">Work</a>
-          <a href="/contact">Contact</a>
-          <a href="mailto:hello@omekum.com">hello@omekum.com</a>
+          <a href="#process">Process</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="/contact">Project inquiry</a>
+          <a href="mailto:hello@orilto.ai">hello@orilto.ai</a>
         </div>
       </footer>
     </main>
