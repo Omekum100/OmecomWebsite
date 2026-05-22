@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Omekum App AI Readable Document</title>
+  <title>orilto.ai Website AI Readable Document</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -33,14 +33,46 @@
   </style>
 </head>
 <body>
-  <h1>Omekum App AI Readable Document</h1>
+  <h1>orilto.ai Website AI Readable Document</h1>
 
   <h2>Purpose</h2>
   <p>
-    This document explains the Omekum web app in a structure that is easy for humans,
-    Word processors, and AI tools to read. The project is a React and Vite website for
-    a digital agency called Omekum.
+    This document explains the current orilto.ai web app in a structure that is easy
+    for humans, Word processors, and AI tools to read. Keep this file updated whenever
+    the website structure, brand position, copy, build workflow, or deployment workflow changes.
   </p>
+
+  <h2>Current Brand Position</h2>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Public brand</td>
+      <td>orilto.ai</td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td>AI-first product studio</td>
+    </tr>
+    <tr>
+      <td>Core offer</td>
+      <td>AI websites, AI systems, workflow automation, technical support, social media support, and innovation builds.</td>
+    </tr>
+    <tr>
+      <td>Primary positioning line</td>
+      <td>The technical layer modern businesses need to grow.</td>
+    </tr>
+    <tr>
+      <td>Audience</td>
+      <td>Businesses, startups, service teams, founders, and operators who need practical technical execution and modern AI/product thinking.</td>
+    </tr>
+    <tr>
+      <td>Contact email</td>
+      <td>hello@orilto.ai</td>
+    </tr>
+  </table>
 
   <h2>Project Summary</h2>
   <table>
@@ -49,8 +81,20 @@
       <th>Value</th>
     </tr>
     <tr>
-      <td>Project name</td>
+      <td>Package/project name</td>
       <td>omekum</td>
+    </tr>
+    <tr>
+      <td>Remote repository</td>
+      <td>https://github.com/Omekum100/OmecomWebsite.git</td>
+    </tr>
+    <tr>
+      <td>Main working branch</td>
+      <td>develop</td>
+    </tr>
+    <tr>
+      <td>Production branch</td>
+      <td>main. User prefers pulling or merging to main manually.</td>
     </tr>
     <tr>
       <td>Framework</td>
@@ -76,6 +120,10 @@
       <td>Contact page URL</td>
       <td>http://127.0.0.1:5173/contact</td>
     </tr>
+    <tr>
+      <td>AWS Amplify URL</td>
+      <td>https://main.d23yy6ucc1l49z.amplifyapp.com/</td>
+    </tr>
   </table>
 
   <h2>How To Run</h2>
@@ -91,75 +139,62 @@
   <p>Build for production:</p>
   <pre>npm run build</pre>
 
+  <p>PowerShell note: if npm.ps1 is blocked by execution policy, use npm.cmd:</p>
+  <pre>npm.cmd run build</pre>
+
   <p>Preview the production build:</p>
   <pre>npm run preview</pre>
 
-  <h2>App Content</h2>
+  <h2>Deployment Workflow</h2>
+  <ul>
+    <li>Development work should be committed and pushed to develop unless the user explicitly asks for main.</li>
+    <li>AWS Amplify pipeline exists for the main branch.</li>
+    <li>The user prefers to merge or pull code into main manually.</li>
+    <li>Do not push main automatically unless the user explicitly asks.</li>
+    <li>Amplify build settings are stored in amplify.yml.</li>
+    <li>Amplify runs npm ci and npm run build, then deploys the dist directory.</li>
+  </ul>
+
+  <h2>Current App Content</h2>
   <p>
-    The app presents Omekum as a practical digital agency that builds websites,
-    apps, AI tools, automation systems, dashboards, and custom software.
+    The app presents orilto.ai as an AI-first product studio that helps businesses
+    with AI websites, AI systems, automation, technical support, social operations,
+    and new innovation builds.
   </p>
 
-  <h3>Main Sections</h3>
+  <h3>Main Landing Page Sections</h3>
   <ul>
-    <li>Header navigation: Work, Services, AI Solutions, About, Contact.</li>
-    <li>Hero section: Digital products for real-world problems.</li>
-    <li>Project numbers section: completed projects, running projects, and AI/automation flows.</li>
-    <li>Services section: Digital Products, AI Solutions, Custom Software, Tech Problem Solving.</li>
-    <li>About section: Clear communication, practical pricing, fast prototypes, custom solutions, long-term support.</li>
-    <li>AI section: Customer support assistants, document automation, lead qualification, dashboards, knowledge chatbots, workflow automation.</li>
-    <li>Process section: Understand, design, build, test, launch and improve.</li>
-    <li>Work examples: Local Service Booking, AI Support Desk, Operations Dashboard.</li>
-    <li>Testimonials section: sample client quotes that should be replaced with real testimonials when available.</li>
-    <li>Contact section: Email links to hello@omekum.com.</li>
-    <li>Dedicated contact page: Hero section, project inquiry form, direct email option, contact reasons, and next-step trust cues.</li>
-    <li>Footer: Services, company links, and email.</li>
-  </ul>
-
-  <h3>Landing Page Project Numbers</h3>
-  <ul>
-    <li>28+ completed projects.</li>
-    <li>06 running projects.</li>
-    <li>14 AI and automation flows.</li>
-    <li>These are placeholder marketing numbers and should be updated with real Omekum numbers when confirmed.</li>
-  </ul>
-
-  <h3>Landing Page Testimonials</h3>
-  <ul>
-    <li>Testimonial 1: Rohan Mehta, Founder, Local Services Platform.</li>
-    <li>Testimonial 2: Anika Sharma, Operations Lead, Support Team.</li>
-    <li>Testimonial 3: Vikram Rao, Director, Growing Retail Business.</li>
-    <li>These are sample testimonials and should be replaced with real client quotes before public launch if required.</li>
+    <li>Header navigation: Services, Systems, Studio, Contact.</li>
+    <li>Hero section: "The technical layer modern businesses need to grow."</li>
+    <li>Operating layer visual: connected business nodes for website, leads, automation, support, and content.</li>
+    <li>Proof strip: business-first technical thinking, design/build/automate/support, practical outcomes.</li>
+    <li>Problem section: before/after comparison between scattered technical work and a connected operating layer.</li>
+    <li>Services section: AI Websites, AI Systems, Workflow Automation, Technical Support, Social Media Support, Innovation Builds.</li>
+    <li>Use cases section: website launch, automation, AI assistant/internal tool, technical operations support.</li>
+    <li>Studio model section: diagnose, map, prototype, build/connect, launch/support/improve.</li>
+    <li>CTA section: "Bring the business problem. We will shape the technical system."</li>
+    <li>Footer: brand summary, studio links, contact links.</li>
   </ul>
 
   <h3>Contact Page Details</h3>
   <ul>
     <li>Route: /contact</li>
-    <li>Main goal: Encourage users to start a project conversation with Omekum.</li>
-    <li>Form fields: name, email, project type, and project details.</li>
-    <li>Direct email: hello@omekum.com</li>
-    <li>Trust cues: reply within 1 business day, clear next steps, no pressure call, practical budget guidance.</li>
-    <li>Contact reasons: build something new, add AI or automation, fix a tech problem.</li>
+    <li>Main goal: Encourage users to describe a business problem that orilto.ai can turn into a technical system.</li>
+    <li>Form fields: name, email, need, and brief.</li>
+    <li>Direct email: hello@orilto.ai</li>
+    <li>Contact reasons: better website or product surface, automation, AI support/content/operations tooling, technical help with a product-studio brain.</li>
     <li>Form behavior: opens the user's email app using mailto because no backend is currently connected.</li>
   </ul>
 
-  <h2>Animation And Motion Scope</h2>
-  <p>
-    The app includes lightweight CSS animation in areas where motion supports the
-    agency story without requiring JavaScript animation libraries.
-  </p>
+  <h2>Design Direction</h2>
   <ul>
-    <li>Hero image uses slow background drift for visual depth.</li>
-    <li>Hero content fades and rises on page load.</li>
-    <li>Header slides in and the Omekum brand mark has a soft pulse.</li>
-    <li>Hero signal strip contains moving labels: Prototype, Automate, Launch, Improve.</li>
-    <li>Service cards enter with staggered timing and include a moving scan accent.</li>
-    <li>Service accent bars animate through the brand colors.</li>
-    <li>Value chips and AI solution chips enter with small staggered motion.</li>
-    <li>AI board includes a scanning line to suggest automation and analysis.</li>
-    <li>Process track includes a moving progress rule above the steps.</li>
-    <li>Cards and images have hover movement for interactivity.</li>
-    <li>The CSS includes prefers-reduced-motion support for accessibility.</li>
+    <li>Current direction name: orilto.ai Operating Layer.</li>
+    <li>Visual personality: AI-first product studio, technical, sharp, business-oriented, and practical.</li>
+    <li>Palette: deep graphite/near-black base, soft white text, electric cyan, green system status, and limited supporting accent colors.</li>
+    <li>Typography: modern sans-serif using Manrope.</li>
+    <li>Layout principle: fewer generic cards, stronger system visual, more operational storytelling.</li>
+    <li>Hero visual: custom CSS interface mockup showing business nodes connected around an AI studio core.</li>
+    <li>Motion: lightweight CSS floating motion on system nodes with reduced motion support.</li>
   </ul>
 
   <h2>File Map</h2>
@@ -171,6 +206,10 @@
     <tr>
       <td>package.json</td>
       <td>Defines scripts and dependencies for the React/Vite app.</td>
+    </tr>
+    <tr>
+      <td>amplify.yml</td>
+      <td>AWS Amplify build workflow. Runs npm ci and npm run build, deploys dist.</td>
     </tr>
     <tr>
       <td>vite.config.js</td>
@@ -186,15 +225,15 @@
     </tr>
     <tr>
       <td>src/App.jsx</td>
-      <td>Main React component. Contains all page sections and text content.</td>
+      <td>Main React component. Contains homepage, contact page, data arrays, and content structure.</td>
     </tr>
     <tr>
       <td>src/App.css</td>
-      <td>Main page styling for the Omekum website.</td>
+      <td>Main page styling and responsive visual system for the orilto.ai website.</td>
     </tr>
     <tr>
       <td>src/index.css</td>
-      <td>Global CSS imported by the React entry point.</td>
+      <td>Global CSS imported by the React entry point, including font import and global defaults.</td>
     </tr>
     <tr>
       <td>public/</td>
@@ -202,7 +241,7 @@
     </tr>
     <tr>
       <td>dist/</td>
-      <td>Production build output generated by Vite.</td>
+      <td>Production build output generated by Vite. Ignored by git.</td>
     </tr>
   </table>
 
@@ -215,86 +254,102 @@
     <li>eslint and React ESLint plugins</li>
   </ul>
 
+  <h2>Change Record</h2>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Branch</th>
+      <th>Change</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>2026-05-21</td>
+      <td>develop</td>
+      <td>Added Amplify build workflow.</td>
+      <td>Created amplify.yml for npm ci, npm run build, and dist artifacts. Pushed develop. main was also pushed once during pipeline setup; future main updates should be manual unless requested.</td>
+    </tr>
+    <tr>
+      <td>2026-05-21</td>
+      <td>develop</td>
+      <td>Repositioned website as orilto.ai AI-first product studio.</td>
+      <td>Updated App.jsx and App.css with new product-studio content, operating-layer hero visual, broader services, contact page copy, and sharper technical visual system.</td>
+    </tr>
+    <tr>
+      <td>2026-05-21</td>
+      <td>develop</td>
+      <td>Updated AI_README.doc.</td>
+      <td>Document now records brand position, deployment workflow, app structure, design direction, file map, and future-agent instructions.</td>
+    </tr>
+  </table>
+
   <h2>AI Context Block</h2>
   <p>
     The following block is intentionally plain and structured for AI ingestion.
   </p>
   <pre>{
-  "project": "omekum",
+  "public_brand": "orilto.ai",
+  "package_project": "omekum",
   "type": "React Vite website",
-  "purpose": "Digital agency website for Omekum",
+  "category": "AI-first product studio",
+  "purpose": "Website for orilto.ai, a product studio that provides AI websites, AI systems, automation, technical support, social media support, and innovation builds.",
   "primary_audience": [
+    "businesses",
+    "startups",
+    "service teams",
     "founders",
-    "shop owners",
-    "creators",
-    "service businesses",
-    "teams",
-    "individuals needing technical help"
+    "operators",
+    "teams needing technical support"
   ],
   "main_capabilities_advertised": [
-    "websites",
-    "apps",
-    "AI tools",
-    "automation",
-    "dashboards",
-    "custom software"
+    "AI websites",
+    "AI systems",
+    "workflow automation",
+    "technical support",
+    "social media support",
+    "innovation builds"
   ],
+  "positioning_line": "The technical layer modern businesses need to grow.",
+  "remote_repository": "https://github.com/Omekum100/OmecomWebsite.git",
+  "working_branch": "develop",
+  "production_branch": "main",
+  "main_branch_rule": "Do not push main unless the user explicitly asks. User prefers manual merge or pull into main.",
   "run_command": "npm run dev -- --host 127.0.0.1",
   "local_url": "http://127.0.0.1:5173/",
   "contact_page_url": "http://127.0.0.1:5173/contact",
   "build_command": "npm run build",
+  "powershell_build_command": "npm.cmd run build",
+  "amplify_url": "https://main.d23yy6ucc1l49z.amplifyapp.com/",
+  "amplify_config": "amplify.yml",
   "main_source_file": "src/App.jsx",
   "entry_file": "src/main.jsx",
   "styling_files": [
     "src/App.css",
     "src/index.css"
   ],
-  "animation_files": [
-    "src/App.jsx",
-    "src/App.css"
-  ],
-  "animation_summary": [
-    "hero image drift",
-    "hero signal strip",
-    "staggered card and chip entry",
-    "AI scan line",
-    "process progress flow",
-    "hover movement",
-    "reduced motion support"
-  ],
-  "landing_stats": {
-    "completed_projects": "28+",
-    "running_projects": "06",
-    "ai_and_automation_flows": "14",
-    "status": "Placeholder marketing numbers until real counts are confirmed"
-  },
-  "landing_testimonials": {
-    "status": "Sample testimonials until real client quotes are confirmed",
-    "items": [
-      "Rohan Mehta, Founder, Local Services Platform",
-      "Anika Sharma, Operations Lead, Support Team",
-      "Vikram Rao, Director, Growing Retail Business"
-    ]
-  },
+  "contact_email": "hello@orilto.ai",
   "contact_page": {
     "route": "/contact",
-    "purpose": "Dedicated project inquiry and contact page",
+    "purpose": "Project inquiry page for business problems, technical needs, AI systems, automation, support, social operations, and new ideas.",
     "form_fields": [
       "name",
       "email",
-      "project_type",
+      "need",
       "message"
-    ],
-    "direct_email": "hello@omekum.com",
-    "trust_cues": [
-      "Reply within 1 business day",
-      "Clear next steps",
-      "No pressure call",
-      "Practical budget guidance"
     ],
     "backend_status": "No backend connected. Form uses mailto."
   },
-  "contact_email": "hello@omekum.com"
+  "design_direction": {
+    "name": "orilto.ai Operating Layer",
+    "style": "AI-first product studio with operating-system inspired interface visuals",
+    "palette": [
+      "near black",
+      "soft white",
+      "electric cyan",
+      "system green",
+      "limited amber/violet/pink accents"
+    ],
+    "hero_visual": "CSS operating layer interface with business nodes connected around an AI studio core"
+  }
 }</pre>
 
   <h2>Notes For Future AI Assistants</h2>
@@ -302,8 +357,11 @@
     <li>Do not edit files inside node_modules.</li>
     <li>Primary content changes should usually be made in src/App.jsx.</li>
     <li>Primary visual changes should usually be made in src/App.css or src/index.css.</li>
-    <li>Use npm run build to verify the app still builds after changes.</li>
+    <li>Update this AI_README.doc whenever meaningful changes are made.</li>
+    <li>Use npm.cmd run build on this Windows/PowerShell environment if npm.ps1 execution is blocked.</li>
+    <li>Push routine work to develop only unless the user explicitly asks for main.</li>
     <li>The current app is mostly static content and does not use routing or a backend.</li>
+    <li>The contact form uses mailto and does not submit to a server.</li>
   </ul>
 </body>
 </html>
